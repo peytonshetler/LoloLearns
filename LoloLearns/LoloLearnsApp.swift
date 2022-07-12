@@ -11,7 +11,7 @@ import SwiftUI
 struct LoloLearnsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }

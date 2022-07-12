@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		79278F332856436300DF77ED /* LoloLearnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79278F322856436300DF77ED /* LoloLearnsApp.swift */; };
-		79278F352856436300DF77ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79278F342856436300DF77ED /* ContentView.swift */; };
 		79278F372856436400DF77ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79278F362856436400DF77ED /* Assets.xcassets */; };
 		79278F3A2856436400DF77ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79278F392856436400DF77ED /* Preview Assets.xcassets */; };
+		79278F412856437900DF77ED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79278F402856437900DF77ED /* Home.swift */; };
+		7985BDDE285A1DFD00411C0F /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDDD285A1DFD00411C0F /* FlashCard.swift */; };
+		7985BDE0285A1E0500411C0F /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDDF285A1E0500411C0F /* Animal.swift */; };
+		7985BDE4285A1E5B00411C0F /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDE3285A1E5B00411C0F /* VoiceManager.swift */; };
+		7985BDE6285A1EBE00411C0F /* CardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDE5285A1EBE00411C0F /* CardCarouselView.swift */; };
+		7985BDE8285A1EFC00411C0F /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDE7285A1EFC00411C0F /* FlashCardView.swift */; };
+		7985BDEA285A1F4400411C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7985BDE9285A1F4400411C0F /* LaunchScreen.storyboard */; };
+		7985BDEC285A24AD00411C0F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985BDEB285A24AD00411C0F /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79278F2F2856436200DF77ED /* LoloLearns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoloLearns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79278F322856436300DF77ED /* LoloLearnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoloLearnsApp.swift; sourceTree = "<group>"; };
-		79278F342856436300DF77ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79278F362856436400DF77ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79278F392856436400DF77ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79278F402856437900DF77ED /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7985BDDD285A1DFD00411C0F /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+		7985BDDF285A1E0500411C0F /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		7985BDE3285A1E5B00411C0F /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
+		7985BDE5285A1EBE00411C0F /* CardCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCarouselView.swift; sourceTree = "<group>"; };
+		7985BDE7285A1EFC00411C0F /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		7985BDE9285A1F4400411C0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7985BDEB285A24AD00411C0F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		79278F312856436200DF77ED /* LoloLearns */ = {
 			isa = PBXGroup;
 			children = (
+				7985BDE2285A1E4F00411C0F /* Utils */,
+				79278F44285A1DC000DF77ED /* Model */,
+				7985BDE1285A1E0D00411C0F /* View */,
 				79278F322856436300DF77ED /* LoloLearnsApp.swift */,
-				79278F342856436300DF77ED /* ContentView.swift */,
 				79278F362856436400DF77ED /* Assets.xcassets */,
 				79278F382856436400DF77ED /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				79278F392856436400DF77ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79278F44285A1DC000DF77ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7985BDDD285A1DFD00411C0F /* FlashCard.swift */,
+				7985BDDF285A1E0500411C0F /* Animal.swift */,
+				7985BDEB285A24AD00411C0F /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7985BDE1285A1E0D00411C0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7985BDE5285A1EBE00411C0F /* CardCarouselView.swift */,
+				79278F402856437900DF77ED /* Home.swift */,
+				7985BDE7285A1EFC00411C0F /* FlashCardView.swift */,
+				7985BDE9285A1F4400411C0F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7985BDE2285A1E4F00411C0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7985BDE3285A1E5B00411C0F /* VoiceManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7985BDEA285A1F4400411C0F /* LaunchScreen.storyboard in Resources */,
 				79278F3A2856436400DF77ED /* Preview Assets.xcassets in Resources */,
 				79278F372856436400DF77ED /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79278F352856436300DF77ED /* ContentView.swift in Sources */,
+				7985BDDE285A1DFD00411C0F /* FlashCard.swift in Sources */,
+				7985BDE0285A1E0500411C0F /* Animal.swift in Sources */,
+				7985BDE8285A1EFC00411C0F /* FlashCardView.swift in Sources */,
+				79278F412856437900DF77ED /* Home.swift in Sources */,
+				7985BDE4285A1E5B00411C0F /* VoiceManager.swift in Sources */,
+				7985BDEC285A24AD00411C0F /* Food.swift in Sources */,
+				7985BDE6285A1EBE00411C0F /* CardCarouselView.swift in Sources */,
 				79278F332856436300DF77ED /* LoloLearnsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +322,14 @@
 				DEVELOPMENT_TEAM = 4BNX73M8J6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lolo Learns";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peytonshetler.LoloLearns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +357,14 @@
 				DEVELOPMENT_TEAM = 4BNX73M8J6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lolo Learns";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +372,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peytonshetler.LoloLearns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
